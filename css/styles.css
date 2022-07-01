@@ -1,0 +1,428 @@
+/*  ------ Fonts for using -------
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Переменые */
+:root {
+    /* Главный цвет текста */
+    --color-main-text: #212121; 
+
+    /* Второстепенный цвет текста */
+    --color-secondary-text: #757575;
+
+    /* Цвет темы сайта */
+    --color-theme: #2196F3; 
+
+    /* Цвет при наведении кнопки intro */
+    --color-btn-hover: #188CE8; 
+}
+
+/*----- Обнуление css -------*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--color-main-text);
+    margin: 0;
+}
+
+*,
+*:before,
+*:after { 
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+p, li, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    border: none;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.width-website {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/*------------- Header ------------*/
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+    padding: 25px 0;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo-text > span {
+    color: var(--color-theme);
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.nav {
+    margin-left: 93px;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link-style {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.nav-list-item {
+    margin-right: 50px;
+}
+
+.nav-list-item:last-child {
+    margin: 0;
+}
+
+.nav-item-link {
+    color: var(--color-main-text);
+    padding: 32px 0;
+}
+
+.address-list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.address-list-item:first-child {
+    margin-right: 50px;
+}
+
+.address-item-link {
+    color: var(--color-secondary-text);
+    padding: 32px 0;
+}
+
+.link-style:hover {
+    color: var(--color-theme);
+}
+
+.current-link {
+    color: var(--color-theme);
+}
+
+/*--------- Main -----------*/
+
+    /*----------- Intro ------------*/
+
+.intro {
+    background-color: #2F303A;
+    padding: 200px 0;
+}
+
+.intro-inner {
+   text-align: center; 
+}
+
+.intro-title-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.intro-title {
+    font-size: 44px;
+    line-height: 1.3;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 650px;
+    text-align: center;
+    color: white;
+}
+
+.btn-main-style {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; 
+    border: none;
+    border-radius: 4px;
+}
+
+.intro-btn {
+    color: white;
+    font-weight: bold;
+    background-color: var(--color-theme);
+    padding: 10px 32px;
+    line-height: 1.8;
+    transition: background-color 0.1s linear;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.intro-btn:hover {
+    background-color: var(--color-btn-hover);
+}
+
+/*----------- Esplly --------------*/
+
+.esplly {
+    padding: 94px 0;
+}
+
+.esplly-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.esplly-list-item {
+   width: calc((100% - 90px) / 4); 
+   margin-right: 30px;
+}
+
+.esplly-list-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.esplyy-list-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.esplyy-list-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--color-secondary-text);
+}
+
+/*------------ About -----------*/
+
+.about {
+    padding-bottom: 94px;
+}
+
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-list-item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+}
+
+.about-list-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.about-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*--------- Team ------------*/
+
+.team {
+    background-color: #F5F4FA;
+    padding: 94px 0;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-list-item {
+    width: calc((100% - 90px) / 4); 
+    margin-right: 30px;
+}
+
+.team-list-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.team-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-list-item {
+    background-color: white;
+    text-align: center;
+    width: 270px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px #757575;
+    margin-bottom: 10px;
+}
+
+.box-team-info {
+    padding: 30px;
+}
+
+.team-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-main-text);
+    margin: 0 auto 10px auto;
+}
+
+.team-profes {
+    font-size: 16px;
+    color: var(--color-secondary-text);
+}
+
+/*------- Portfolio -------*/
+
+.portfolio {
+    padding: 94px 0 64px 0;
+}
+
+.btn-list {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-list-item {
+    margin: 0 4px;
+}
+
+.portfolio-list-item {
+    margin-bottom: 34px;
+}
+
+.portfoilo-filter-btn {
+    line-height: 1.6;
+    color: var(--color-main-text);
+    background-color: #F5F4FA;
+    padding: 6px 22px;
+    transition: all 0.1s linear;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.portfoilo-filter-btn:hover {
+    background-color: var(--color-theme);
+    color: #fff;
+    box-shadow: 0 3px 3px #7575758b;
+}
+
+.current-btn {
+    background-color: var(--color-theme);
+    color: #fff;
+    box-shadow: 0 3px 3px #7575758b;
+}
+
+.portf-img-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portf-img-item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.portf-img-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portf-images {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.box-for-cont-card {
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+.portf-title {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.portf-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-secondary-text);
+}
+
+
+/*--------- Footer ------------*/
+
+.footer {
+    background-color: #2F303A;
+    padding: 60px 0;
+}
+
+.logo-text.footer {
+    color: white;
+    padding: 0;
+}
+
+.footer-address {
+    margin-top: 20px;
+}
+
+.footer-list-item {
+    margin-bottom: 9px;
+}
+
+.footer-list-item:last-child {
+    margin: 0;
+}
+
+.footer-item-text {
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+    color: white;
+}
+
+.footer-item-link {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.1s linear;
+
+}
