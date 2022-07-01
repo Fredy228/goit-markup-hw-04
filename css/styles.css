@@ -144,10 +144,15 @@ input{
 .intro {
     background-color: #2F303A;
     padding: 200px 0;
+    background-image: url(../images/intro/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .intro-inner {
    text-align: center; 
+
 }
 
 .intro-title-box {
