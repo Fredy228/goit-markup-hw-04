@@ -319,6 +319,43 @@ input{
 .team-profes {
     font-size: 16px;
     color: var(--color-secondary-text);
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-item {
+    width: calc((100% - 30px) / 4); 
+    margin-right: 10px;
+    padding: 12px;
+    border-radius: 50%;
+    transition: background-color 0.1s linear;
+}
+
+.social-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.social-icon {
+    fill: #AFB1B8;
+    transition: fill 0.1s linear;
+}
+
+.social-item:hover {
+    background-color: var(--color-theme);
+}
+
+.social-item:hover .social-icon {
+    fill: #fff;
 }
 
 /*------- Portfolio -------*/
