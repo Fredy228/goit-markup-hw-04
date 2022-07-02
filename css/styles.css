@@ -220,6 +220,14 @@ input{
     margin-right: 0;
 }
 
+.esplly-icons-block {
+    width: 100%;
+    background-color: #F5F4FA;
+    text-align: center;
+    padding: 25px 0;
+    margin-bottom: 30px;
+}
+
 .esplyy-list-title {
     font-size: 14px;
     font-weight: bold;
