@@ -345,7 +345,7 @@ input{
     text-align: center;
 }
 
-.social-icon {
+.social-team-icon {
     fill: #AFB1B8;
     transition: fill 0.1s linear;
 }
@@ -354,7 +354,7 @@ input{
     background-color: var(--color-theme);
 }
 
-.social-team-item:hover .social-icon {
+.social-team-item:hover .social-team-icon {
     fill: #fff;
 }
 
