@@ -465,6 +465,7 @@ input{
 
 .portf-img-item:hover {
     box-shadow: 1px 2px 4px 1px #AFB1B8;
+    cursor: pointer;
 }
 
 .portf-images {
