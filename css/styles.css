@@ -222,10 +222,13 @@ input{
 
 .esplly-icons-block {
     width: 100%;
+    height: 120px;
     background-color: #F5F4FA;
     text-align: center;
-    padding: 25px 0;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .esplyy-list-title {
@@ -330,9 +333,6 @@ input{
 .social-item {
     width: calc((100% - 30px) / 4); 
     margin-right: 10px;
-    padding: 12px;
-    border-radius: 50%;
-    transition: background-color 0.1s linear;
 }
 
 .social-item:nth-child(4n) {
@@ -342,7 +342,11 @@ input{
 .social-link {
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 0.2s linear;
 }
 
 .social-team-icon {
@@ -350,11 +354,11 @@ input{
     transition: fill 0.1s linear;
 }
 
-.social-team-item:hover {
+.social-link:hover {
     background-color: var(--color-theme);
 }
 
-.social-team-item:hover .social-team-icon {
+.social-link:hover .social-team-icon {
     fill: #fff;
 }
 
@@ -376,10 +380,6 @@ input{
 .clients-item {
     margin-right: 30px;
     width: calc((100% - 150px) / 6);
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    transition: border-color 0.2s linear;
 }
 
 .clients-item:nth-child(6n) {
@@ -388,8 +388,13 @@ input{
 
 .clients-link {
     display: flex;
-    text-align: center;
+    justify-content: center;
     align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: border-color 0.2s linear;
 }
 
 .clients-icon {
@@ -397,11 +402,11 @@ input{
     transition: fill 0.2s linear;
 }
 
-.clients-item:hover {
+.clients-link:hover {
     border-color: var(--color-theme);
 }
 
-.clients-item:hover .clients-icon {
+.clients-link:hover .clients-icon {
     fill: var(--color-theme);
 }
 
@@ -563,10 +568,10 @@ input{
     fill: #fff;
 }
 
-.social-footer-item {
+.social-link.social-link-footer {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-footer-item:hover {
+.social-link.social-link-footer:hover {
     background-color: var(--color-theme);
 }
